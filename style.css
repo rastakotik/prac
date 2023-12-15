@@ -1,66 +1,135 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-body {
-  background-image: url(bg.jpg);
-  background-color: black;
-  color: white;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap");
+
 :root {
+  --font-title: "Merriweather", sans-serif;
+  --font-text: "Inter", sans-serif;
+  --gold: #bdae82;
+  --bg-dark: #000;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--white);
+  width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.background {
+  background-image: url(bg.jpg);
+  height: 910px;
 }
 
 header {
-  font-family: Inter;
+  font-family: var(--font-text);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px;
+  height: 50px;
+  padding: 20px;
 }
-.logo {
-  margin: 10px 20px;
-}
+
 .container {
-  margin-left: 500px;
-  width: 500px;
+  gap: 30px;
 }
+
 .container,
 .switch-ing {
-  margin-top: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 .switch-ing {
-  margin-right: 20px;
-  width: 70px;
+  gap: 9px;
+}
+.header {
+  gap: 31px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* .logo:hover {
+  color: var(--gold); */
+
+a {
+  color: var(--white);
+  text-decoration: none;
 }
 .hero {
-  margin-left: 82px;
-  margin-top: 285px;
+  margin-left: 80px;
+  margin-top: 241px;
+  text-align: left;
+  width: 464px;
 }
-.title {
-  font-family: Merriweather;
-  font-size: 40px;
+.hero-title {
+  font-family: var(--font-title);
+  font-size: 60px;
 }
 .hero-text {
-  width: 400px;
   line-height: 40px;
+  margin: 62px 0 40px;
 }
 .hero-text,
 .btn {
-  font-family: Inter;
+  font-family: var(--font-text);
   font-size: 20px;
 }
-.btn {
+.hero-btn {
   box-sizing: border-box;
-  margin: 40px 0;
-  color: black;
+  color: var(--bg-dark);
   width: 220px;
   height: 55px;
-  padding-top: 15px;
   text-align: center;
-  background-color: #bdae82;
+  background-color: var(--gold);
+  border: 0;
+  font-size: 20px;
+}
+button:hover {
+  color: var(--white);
+}
+h2 {
+  font-size: 40px;
+  color: var(--gold);
+  font-family: var(--font-title);
+  line-height: 80px;
+  margin: 100px 0 60px;
+}
+
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 250px;
+  height: 2px;
+  background-color: var(--gold);
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 250px;
+  height: 2px;
+  background-color: var(--gold);
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.skills-items {
+  font-family: var(--font-text);
+}
+h3 {
+  font-size: 20px;
+}
+.skills-item {
+  width: 320px;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.skills-logo {
+  height: 50px;
 }

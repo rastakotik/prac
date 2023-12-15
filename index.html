@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo"><img src="logo 1.svg" alt="logo" width="50px" /></div>
-      <nav class="container">
-        <div class="skills">Skills</div>
-        <div class="portfolio">Portfolio</div>
-        <div class="video">Video</div>
-        <div class="price">Price</div>
-        <div class="contacts">Contacts</div>
-      </nav>
-      <div class="switch-ing">
-        <div class="en">en</div>
-        <div class="/">/</div>
-        <div class="ua">ua</div>
+    <div class="background">
+      <header>
+        <div class="logo"><img src="logo1.svg" alt="logo" width="50px" /></div>
+        <div class="header">
+          <nav class="container">
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#video">Video</a>
+            <a href="#price">Price</a>
+            <a href="#contacts">Contacts</a>
+          </nav>
+          <div class="switch-ing">
+            <div>en</div>
+            <div>/</div>
+            <div>ua</div>
+          </div>
+        </div>
+      </header>
+      <div class="hero">
+        <h1 class="hero-title">Alexa Rise</h1>
+        <div class="hero-text">
+          Save sincere emotions, romantic feelings and happy moments of life
+          together with professional photographer Alexa Rise
+        </div>
+        <button class="hero-btn">Hire me</button>
       </div>
-    </header>
-    <div class="hero">
-      <h1 class="title">Alexa Rise</h1>
-      <div class="hero-text">
-        Save sincere emotions, romantic feelings and happy moments of life
-        together with professional photographer Alexa Rise
-      </div>
-      <div class="btn">Hire me</div>
+    </div>
+    <div class="skills">
+      <h2 class="skills-title">Skills</h2></div>
+      <div class="skills-items">
+        <div class="skills-item">
+          <div class="skills-logo"><img src="camera.svg" alt="camera" width="62px"/></div>
+          <h3>Digital photography</h3>
+          <div class="skills-text">
+            High-quality photos in the studio and on the nature
+          </div>
+          <div class="skills-item">
+            <div class="skills-logo"><img src="video.svg" alt="video" width="60px"/></div>
+            <h3>Video shooting</h3>
+            <div class="skills-text">
+              Capture your moments so that they always stay with you
+            </div>
+            <div class="skills-item">
+              <div class="skills-logo"><img src="retouch.svg" alt="retouch"  width="66px"/></div>
+              <h3>Retouch</h3>
+              <div class="skills-text">
+                I strive to make photography surpass reality
+              </div>
+              <div class="skills-item">
+                <div class="skills-logo"><img src="mic.svg" alt="mic" width="32px"/></div>
+                <h3>Audio</h3>
+                <div class="skills-text">
+                  Professional sounds recording for video, advertising, portfolio
+                </div>
+        </div>
     </div>
   </body>
 </html>
