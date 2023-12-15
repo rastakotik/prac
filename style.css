@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  background-image: url(bg.jpg);
+  background-color: black;
+  color: white;
+}
+:root {
+}
+header {
+  font-family: Inter;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.logo {
+  margin: 10px 20px;
+}
+.container {
+  margin-left: 500px;
+  width: 500px;
+}
+.container,
+.switch-ing {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.switch-ing {
+  margin-right: 20px;
+  width: 70px;
+}
+.hero {
+  margin-left: 82px;
+  margin-top: 285px;
+}
+.title {
+  font-family: Merriweather;
+}
+.hero-text {
+  width: 400px;
+  line-height: 40px;
+}
+.hero-text,
+.btn {
+  font-family: Inter;
+  font-size: 20px;
+}
+.btn {
+  box-sizing: border-box;
+  margin: 40px 0;
+  color: black;
+  width: 220px;
+  height: 55px;
+  padding-top: 15px;
+  text-align: center;
+  background-color: #bdae82;
+}
