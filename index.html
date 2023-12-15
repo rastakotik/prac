@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="background">
-      <header>
-        <div class="logo"><img src="logo1.svg" alt="logo" width="50px" /></div>
-        <div class="header">
-          <nav class="container">
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#video">Video</a>
-            <a href="#price">Price</a>
-            <a href="#contacts">Contacts</a>
-          </nav>
-          <div class="switch-ing">
-            <div>en</div>
-            <div>/</div>
-            <div>ua</div>
-          </div>
+
+<head>
+  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="background">
+    <header>
+      <div class="logo"><img src="img/logo.svg" alt="logo" width="50px" /></div>
+      <div class="header">
+        <nav class="container">
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#video">Video</a>
+          <a href="#price">Price</a>
+          <a href="#contacts">Contacts</a>
+        </nav>
+        <div class="switch-ing">
+          <div>en</div>
+          <div>/</div>
+          <div>ua</div>
         </div>
-      </header>
-      <div class="hero">
-        <h1 class="hero-title">Alexa Rise</h1>
-        <div class="hero-text">
-          Save sincere emotions, romantic feelings and happy moments of life
-          together with professional photographer Alexa Rise
+      </div>
+    </header>
+
+    <div class="hero">
+      <h1 class="hero-title">Alexa Rise</h1>
+      <div class="hero-text">
+        Save sincere emotions, romantic feelings and happy moments of life
+        together with professional photographer Alexa Rise
+      </div>
+      <button class="hero-btn">Hire me</button>
+    </div>
+  </section>
+
+
+  <!-- зробила секцію із id для того, щоб візуально все поділити -->
+  <section id='skills'>
+    <h2 class="skills-title">Skills</h2>
+
+    <div class="skills-items">
+
+      <div class="skills-item">
+        <!-- кожен цей елемент має бути окремо, а не один в одному -->
+        <img src="img/camera.svg" alt="camera" />
+        <h3>Digital photography</h3>
+        <div class="skills-text">
+          High-quality photos in the studio and on the nature
         </div>
-        <button class="hero-btn">Hire me</button>
+      </div>
+      <!-- тому закрила тут div -->
+
+      <div class="skills-item">
+        <img src="img/video.svg" alt="video"/>
+        <h3>Video shooting</h3>
+        <div class="skills-text">
+          Capture your moments so that they always stay with you
+        </div>
+      </div>
+
+      <div class="skills-item">
+        <img src="img/retouch.svg" alt="retouch"/>
+        <h3>Retouch</h3>
+        <div class="skills-text">
+          I strive to make photography surpass reality
+        </div>
+      </div>
+
+      <div class="skills-item">
+        <img src="img/mic.svg" alt="mic"/>
+        <h3>Audio</h3>
+        <div class="skills-text">
+          Professional sounds recording for video, advertising, portfolio
+        </div>
       </div>
     </div>
-    <div class="skills">
-      <h2 class="skills-title">Skills</h2></div>
-      <div class="skills-items">
-        <div class="skills-item">
-          <div class="skills-logo"><img src="camera.svg" alt="camera" width="62px"/></div>
-          <h3>Digital photography</h3>
-          <div class="skills-text">
-            High-quality photos in the studio and on the nature
-          </div>
-          <div class="skills-item">
-            <div class="skills-logo"><img src="video.svg" alt="video" width="60px"/></div>
-            <h3>Video shooting</h3>
-            <div class="skills-text">
-              Capture your moments so that they always stay with you
-            </div>
-            <div class="skills-item">
-              <div class="skills-logo"><img src="retouch.svg" alt="retouch"  width="66px"/></div>
-              <h3>Retouch</h3>
-              <div class="skills-text">
-                I strive to make photography surpass reality
-              </div>
-              <div class="skills-item">
-                <div class="skills-logo"><img src="mic.svg" alt="mic" width="32px"/></div>
-                <h3>Audio</h3>
-                <div class="skills-text">
-                  Professional sounds recording for video, advertising, portfolio
-                </div>
-        </div>
-    </div>
-  </body>
+
+</body>
+
 </html>

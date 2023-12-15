@@ -16,15 +16,16 @@ body {
   text-align: center;
   font-size: 18px;
   line-height: 36px;
+  font-family: var(--font-text);
+ /* щоб менше раз це писати */
 }
 
 .background {
-  background-image: url(bg.jpg);
+  background-image: url(img/bg.jpg);
   height: 910px;
 }
 
 header {
-  font-family: var(--font-text);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,9 +44,11 @@ header {
   flex-direction: row;
   align-items: center;
 }
+
 .switch-ing {
   gap: 9px;
 }
+
 .header {
   gap: 31px;
   display: flex;
@@ -65,19 +68,22 @@ a {
   text-align: left;
   width: 464px;
 }
+
 .hero-title {
   font-family: var(--font-title);
   font-size: 60px;
 }
+
 .hero-text {
   line-height: 40px;
   margin: 62px 0 40px;
 }
+
 .hero-text,
-.btn {
-  font-family: var(--font-text);
+.btn, h3 {
   font-size: 20px;
 }
+
 .hero-btn {
   box-sizing: border-box;
   color: var(--bg-dark);
@@ -117,19 +123,16 @@ h2::after {
   margin-left: 20px;
   margin-bottom: 10px;
 }
+
+/* тут ти звернулась до .skills-item, не той клас */
 .skills-items {
-  font-family: var(--font-text);
-}
-h3 {
-  font-size: 20px;
-}
-.skills-item {
   width: 320px;
   height: 240px;
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
+
 .skills-logo {
   height: 50px;
 }
