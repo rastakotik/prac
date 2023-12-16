@@ -17,7 +17,7 @@ body {
   font-size: 18px;
   line-height: 36px;
   font-family: var(--font-text);
- /* щоб менше раз це писати */
+  /* щоб менше раз це писати */
 }
 
 .background {
@@ -80,7 +80,8 @@ a {
 }
 
 .hero-text,
-.btn, h3 {
+.btn,
+h3 {
   font-size: 20px;
 }
 
@@ -124,15 +125,35 @@ h2::after {
   margin-bottom: 10px;
 }
 
-/* тут ти звернулась до .skills-item, не той клас */
 .skills-items {
-  width: 320px;
-  height: 240px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 40px;
 }
+.portfolio-btn {
+  box-sizing: border-box;
+  color: var(--gold);
+  width: 220px;
+  height: 55px;
+  text-align: center;
+  background-color: var(--bg-dark);
+  border: 2px solid;
+  border-color: var(--gold);
+  font-size: 20px;
+  gap: 5px;
+  margin-bottom: 60px;
+}
+.portfolio-btn:last-child {
+  background-color: var(--gold);
+  color: var(--bg-dark);
+}
 
-.skills-logo {
-  height: 50px;
+.portfolio-items {
+  height: 560px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0 20px 100px;
 }
