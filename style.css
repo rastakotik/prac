@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --font-title: "Merriweather", sans-serif;
   --font-text: "Inter", sans-serif;
