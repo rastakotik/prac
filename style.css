@@ -1,162 +1,168 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap');
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 :root {
-  --font-title: "Merriweather", sans-serif;
-  --font-text: "Inter", sans-serif;
-  --gold: #bdae82;
-  --bg-dark: #000;
-  --white: #fff;
+	--font-title: 'Merriweather', sans-serif;
+	--font-text: 'Inter', sans-serif;
+	--gold: #bdae82;
+	--bg-dark: #000;
+	--white: #fff;
 }
 
 body {
-  background-color: var(--bg-dark);
-  color: var(--white);
-  width: 1440px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 18px;
-  line-height: 36px;
-  font-family: var(--font-text);
-  /* щоб менше раз це писати */
+	background-color: var(--bg-dark);
+	color: var(--white);
+	width: 1440px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	line-height: 36px;
+	font-family: var(--font-text);
+	/* щоб менше раз це писати */
 }
 
 .background {
-  background-image: url(img/bg.jpg);
-  height: 910px;
+	background-image: url(img/bg.jpg);
+	height: 910px;
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 20px;
-  height: 50px;
-  padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 20px;
+	height: 50px;
+	padding: 20px;
 }
 
 .container {
-  gap: 30px;
+	gap: 30px;
 }
 
 .container,
 .switch-ing {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .switch-ing {
-  gap: 9px;
+	gap: 9px;
 }
 
 .header {
-  gap: 31px;
-  display: flex;
-  flex-direction: row;
+	gap: 31px;
+	display: flex;
+	flex-direction: row;
 }
 
 /* .logo:hover {
   color: var(--gold); */
 
 a {
-  color: var(--white);
-  text-decoration: none;
+	color: var(--white);
+	text-decoration: none;
 }
+
 .hero {
-  margin-left: 80px;
-  margin-top: 241px;
-  text-align: left;
-  width: 464px;
+	margin-left: 80px;
+	margin-top: 241px;
+	text-align: left;
+	width: 464px;
 }
 
 .hero-title {
-  font-family: var(--font-title);
-  font-size: 60px;
+	font-family: var(--font-title);
+	font-size: 60px;
 }
 
 .hero-text {
-  line-height: 40px;
-  margin: 62px 0 40px;
+	line-height: 40px;
+	margin: 62px 0 40px;
 }
 
 .hero-text,
 .btn,
 h3 {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 .hero-btn {
-  box-sizing: border-box;
-  color: var(--bg-dark);
-  width: 220px;
-  height: 55px;
-  text-align: center;
-  background-color: var(--gold);
-  border: 0;
-  font-size: 20px;
+	box-sizing: border-box;
+	color: var(--bg-dark);
+	width: 220px;
+	height: 55px;
+	text-align: center;
+	background-color: var(--gold);
+	border: 0;
+	font-size: 20px;
 }
+
 button:hover {
-  color: var(--white);
+	color: var(--white);
 }
+
 h2 {
-  font-size: 40px;
-  color: var(--gold);
-  font-family: var(--font-title);
-  line-height: 80px;
-  margin: 100px 0 60px;
+	font-size: 40px;
+	color: var(--gold);
+	font-family: var(--font-title);
+	line-height: 80px;
+	margin: 100px 0 60px;
 }
 
 h2::before {
-  content: "";
-  display: inline-block;
-  width: 250px;
-  height: 2px;
-  background-color: var(--gold);
-  margin-right: 20px;
-  margin-bottom: 10px;
+	content: '';
+	display: inline-block;
+	width: 250px;
+	height: 2px;
+	background-color: var(--gold);
+	margin-right: 20px;
+	margin-bottom: 10px;
 }
+
 h2::after {
-  content: "";
-  display: inline-block;
-  width: 250px;
-  height: 2px;
-  background-color: var(--gold);
-  margin-left: 20px;
-  margin-bottom: 10px;
+	content: '';
+	display: inline-block;
+	width: 250px;
+	height: 2px;
+	background-color: var(--gold);
+	margin-left: 20px;
+	margin-bottom: 10px;
 }
 
 .skills-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 40px;
 }
+
 .portfolio-btn {
-  box-sizing: border-box;
-  color: var(--gold);
-  width: 220px;
-  height: 55px;
-  text-align: center;
-  background-color: var(--bg-dark);
-  border: 2px solid;
-  border-color: var(--gold);
-  font-size: 20px;
-  gap: 5px;
-  margin-bottom: 60px;
+	box-sizing: border-box;
+	color: var(--gold);
+	width: 220px;
+	height: 55px;
+	text-align: center;
+	background-color: var(--bg-dark);
+	border: 2px solid;
+	border-color: var(--gold);
+	font-size: 20px;
+	gap: 5px;
+	margin-bottom: 60px;
 }
+
 .portfolio-btn:last-child {
-  background-color: var(--gold);
-  color: var(--bg-dark);
+	background-color: var(--gold);
+	color: var(--bg-dark);
 }
 
 .portfolio-items {
-  height: 560px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin: 0 20px 100px;
+	height: 560px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin: 0 20px 100px;
 }
