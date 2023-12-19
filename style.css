@@ -146,23 +146,23 @@ h2::after {
 	height: 55px;
 	text-align: center;
 	background-color: var(--bg-dark);
-	border: 2px solid;
-	border-color: var(--gold);
+	border: 2px solid var(--gold);
 	font-size: 20px;
 	gap: 5px;
 	margin-bottom: 60px;
 }
 
-.portfolio-btn:last-child {
+.portfolio-btn:last-child,
+.portfolio-btn:hover {
 	background-color: var(--gold);
 	color: var(--bg-dark);
 }
 
 .portfolio-items {
-	height: 560px;
+	/* height: 560px; не знаю де такі дані взяла, але її взагалі не тре*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	gap: 25px;
-	margin: 0 20px 100px;
+	margin: 0 20px; 
 }
