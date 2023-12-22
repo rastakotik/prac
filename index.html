@@ -1,112 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <section class="background">
+      <header>
+        <div class="logo">
+          <img src="img/logo.svg" alt="logo" width="50px" />
+        </div>
+        <div class="header">
+          <nav class="container">
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#video">Video</a>
+            <a href="#price">Price</a>
+            <a href="#contacts">Contacts</a>
+          </nav>
+          <div class="switch-ing">
+            <div>en</div>
+            <div>/</div>
+            <div>ua</div>
+          </div>
+        </div>
+      </header>
 
-<body>
-  <section class="background">
-    <header>
-      <div class="logo"><img src="img/logo.svg" alt="logo" width="50px" /></div>
-      <div class="header">
-        <nav class="container">
-          <a href="#skills">Skills</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#video">Video</a>
-          <a href="#price">Price</a>
-          <a href="#contacts">Contacts</a>
-        </nav>
-        <div class="switch-ing">
-          <div>en</div>
-          <div>/</div>
-          <div>ua</div>
+      <div class="hero">
+        <h1 class="hero-title">Alexa Rise</h1>
+        <div class="hero-text">
+          Save sincere emotions, romantic feelings and happy moments of life
+          together with professional photographer Alexa Rise
+        </div>
+        <button class="btn">Hire me</button>
+      </div>
+    </section>
+
+    <!-- зробила секцію із id для того, щоб візуально все поділити -->
+    <section id="skills">
+      <h2 class="skills-title">Skills</h2>
+
+      <div class="skills-items">
+        <div class="skills-item">
+          <!-- кожен цей елемент має бути окремо, а не один в одному -->
+          <img src="img/camera.svg" alt="camera" />
+          <h3>Digital photography</h3>
+          <div class="skills-text">
+            High-quality photos in the studio and on the nature
+          </div>
+        </div>
+        <!-- тому закрила тут div -->
+
+        <div class="skills-item">
+          <img src="img/video.svg" alt="video" />
+          <h3>Video shooting</h3>
+          <div class="skills-text">
+            Capture your moments so that they always stay with you
+          </div>
+        </div>
+
+        <div class="skills-item">
+          <img src="img/retouch.svg" alt="retouch" />
+          <h3>Retouch</h3>
+          <div class="skills-text">
+            I strive to make photography surpass reality
+          </div>
+        </div>
+
+        <div class="skills-item">
+          <img src="img/mic.svg" alt="mic" />
+          <h3>Audio</h3>
+          <div class="skills-text">
+            Professional sounds recording for video, advertising, portfolio
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <div class="hero">
-      <h1 class="hero-title">Alexa Rise</h1>
-      <div class="hero-text">
-        Save sincere emotions, romantic feelings and happy moments of life
-        together with professional photographer Alexa Rise
+    <section id="portfolio">
+      <h2 class="portfolio-title">Portfolio</h2>
+
+      <div class="portfolio-btns">
+        <button class="portfolio-btn">Winter</button>
+        <button class="portfolio-btn">Spring</button>
+        <button class="portfolio-btn">Summer</button>
+        <button class="portfolio-btn">Autumn</button>
       </div>
-      <button class="hero-btn">Hire me</button>
-    </div>
-  </section>
 
+      <div class="portfolio-items">
+        <img src="img/portfolio-img1.jpg" alt="img1" width="450px" />
+        <img src="img/portfolio-img2.jpg" alt="img2" width="450px" />
+        <img src="img/portfolio-img3.jpg" alt="img3" width="450px" />
+        <img src="img/portfolio-img4.jpg" alt="img4" width="450px" />
+        <img src="img/portfolio-img5.jpg" alt="img5" width="450px" />
+        <img src="img/portfolio-img6.jpg" alt="img6" width="450px" />
+      </div>
+    </section>
 
-  <!-- зробила секцію із id для того, щоб візуально все поділити -->
-  <section id='skills'>
-    <h2 class="skills-title">Skills</h2>
+    <section id="video">
+      <h2 class="video-title">Video</h2>
+      <div class="video-player">
+        <!-- <img src="img/video-player.jpg" alt="" /> -->
+        <img class="play" src="img/Play_hover.svg" alt="play" width="130px" />
+      </div>
+    </section>
 
-    <div class="skills-items">
+    <section id="price">
+      <h2 class="price-title">Price</h2>
+      <div class="price-items">
+        <div class="price-item">
+          <h4>Standard</h4>
+          <div class="cash">500$</div>
+          <div class="price-text">
+            <p>One location</p>
+            <p>120 photos in color</p>
+            <p>12 photos in retouch</p>
+            <p>Readiness 2-3 weeks</p>
+            <p>Make up, visage</p>
+          </div>
+          <button class="btn">Order shooting</button>
+        </div>
 
-      <div class="skills-item">
-        <!-- кожен цей елемент має бути окремо, а не один в одному -->
-        <img src="img/camera.svg" alt="camera" />
-        <h3>Digital photography</h3>
-        <div class="skills-text">
-          High-quality photos in the studio and on the nature
+        <div class="price-item">
+          <h4>Premium</h4>
+          <div class="cash">700$</div>
+          <div class="price-text">
+            <p>One or two locations</p>
+            <p>200 photos in color</p>
+            <p>20 photos in retouch</p>
+            <p>Readiness 1-2 weeks</p>
+            <p>Make up, visage</p>
+          </div>
+          <button class="btn">Order shooting</button>
+        </div>
+
+        <div class="price-item">
+          <h4>Gold</h4>
+          <div class="cash">1000$</div>
+          <div class="price-text">
+            <p>Three locations or more</p>
+            <p>300 photos in color</p>
+            <p>50 photos in retouch</p>
+            <p>Readiness 1 week</p>
+            <p>Make up, visage, hairstyle</p>
+          </div>
+          <button class="btn">Order shooting</button>
         </div>
       </div>
-      <!-- тому закрила тут div -->
+    </section>
 
-      <div class="skills-item">
-        <img src="img/video.svg" alt="video" />
-        <h3>Video shooting</h3>
-        <div class="skills-text">
-          Capture your moments so that they always stay with you
+    <section id="contacts">
+      <div class="contacts-background">
+        <div class="contacts-container">
+          <h5 class="contacts-title">Contact me</h5>
+          <div class="e-mail">E-mail</div>
+          <div class="phone">Phone</div>
+          <div class="message">Message</div>
+          <button class="btn">Send message</button>
         </div>
       </div>
-
-      <div class="skills-item">
-        <img src="img/retouch.svg" alt="retouch" />
-        <h3>Retouch</h3>
-        <div class="skills-text">
-          I strive to make photography surpass reality
-        </div>
-      </div>
-
-      <div class="skills-item">
-        <img src="img/mic.svg" alt="mic" />
-        <h3>Audio</h3>
-        <div class="skills-text">
-          Professional sounds recording for video, advertising, portfolio
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="portfolio">
-    <h2 class="portfolio-title">Portfolio</h2>
-
-    <div class="portfolio-btns">
-      <button class="portfolio-btn">Winter</button>
-      <button class="portfolio-btn">Spring</button>
-      <button class="portfolio-btn">Summer</button>
-      <button class="portfolio-btn">Autumn</button>
-    </div>
-
-    <div class="portfolio-items">
-      <img src="img/portfolio-img1.jpg" alt="img1" width="450px">
-      <img src="img/portfolio-img2.jpg" alt="img2" width="450px">
-      <img src="img/portfolio-img3.jpg" alt="img3" width="450px">
-      <img src="img/portfolio-img4.jpg" alt="img4" width="450px">
-      <img src="img/portfolio-img5.jpg" alt="img5" width="450px">
-      <img src="img/portfolio-img6.jpg" alt="img6" width="450px">
-    </div>
-  </section>
-
-  <section id="video">
-    <h2 class="video-title">Video</h2>
-
-  </section>
-
-</body>
-
+    </section>
+  </body>
 </html>
