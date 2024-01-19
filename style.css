@@ -107,15 +107,84 @@ h3 {
 button:hover {
   color: var(--white);
 }
+.burger {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   body {
     width: 768px;
   }
 
+  .burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .burger span {
+    background-color: var(--white);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: "";
+    background-color: var(--white);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger::before {
+    top: 0;
+  }
+
+  .burger::after {
+    bottom: 0;
+  }
+
+  .burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .burger.active span {
+    transform: scale(0);
+  }
+
+  .header {
+    position: fixed;
+    top: -100%;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    background-color: var(--bg-dark);
+    padding: 64px 127px;
+    transition: all 0.3s ease 0s;
+  }
+  .header.active {
+    top: 0;
+  }
   header {
     background-color: var(--bg-dark);
   }
+
   .background {
     background-size: cover;
     background-repeat: no-repeat;
